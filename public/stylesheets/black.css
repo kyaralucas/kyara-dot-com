@@ -1,49 +1,183 @@
-html, body {
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+
+
+.snip1568 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #141414;
+  text-align: left;
+  line-height: 1.4em;
+  font-size: 14px;
+  box-shadow: none !important;
+}
+
+.snip1568 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.snip1568 .profile-image img {
+  border-radius: 5px;
+  max-width: 100%;
+  height: 80px;
+  vertical-align: top;
+  float: left;
+}
+
+.snip1568 figcaption {
+  width: 100%;
+  background-color: #333333;
+  color: #fff;
+  padding: 25px;
+  display: inline-block;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.snip1568 figcaption:after {
+  content: '';
+  position: absolute;
+  left: 32px;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: #333333 transparent transparent transparent;
+}
+
+.snip1568 h3,
+.snip1568 h4,
+.snip1568 p {
+  margin: 0 0 5px;
+}
+
+.snip1568 h3 {
+  font-weight: 600;
+  font-size: 1.2em;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.snip1568 h4 {
+  color: #8c8c8c;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.snip1568 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.snip1568 .icons {
+  /* padding: 0px 100px; */
+}
+
+.snip1568 i {
+  padding: 10px 2px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  opacity: 0.75;
+}
+
+.snip1568 i:hover {
+  opacity: 1;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+h2 {
+  font-size: 30px;
+  color: white;
+  font-family: 'Montserrat';
+}
+
+.small {
+  line-height: 0;
+}
+
+h3 {
+  font-size: 20px;
+  color: white;
+  font-family: 'Montserrat';
+}
+
+.small {
+  line-height: 0;
+}
+
+html, body, head {
   margin: 0;
   padding: 0;
 }
 
-body {
-  background-color: #34495E;
+header {
+  text-align: right;
 }
+
+
+body {
+  background-color: #40364D;
+  overflow: hidden;
+}
+
 
 iframe {
   width: 100%;
 }
 
 .botui-app-container {
-  margin-top: 40px;
-  width: 410px;
-  height: 500px;
+  /* margin-top: 0px; */
+  width: 220px;
+  height: 600px;
+  overflow-y: scroll;
 }
 
 .botui-container {
-  background-color: #34495E;
+  background-color: #40364D;
 }
 .botui-message-content {
-  color: #FFFFFF;
-  background-color: #F1C40F;
+  font-size: 1rem;
+  color: white;
+  background-color: #2F283A;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .botui-message-content.human {
-  background-color: #3498DB;
+  font-size: 1rem;
+  color: #40364D;
+  background-color: white;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .botui-actions-text-input {
-  color: #FFFFFF;
-  border-bottom: 1px solid #3498DB;
+  color: white;
+  border-bottom: 1px solid #2F283A;
   margin: 0;
 }
 
 .botui-actions-buttons-button {
   line-height: 1 !important;
-  background-color: #3498DB;
+  background-color: #5FAFE2;
+  box-shadow: none;
 }
 
 .botui-message-content-link {
-  color: #F1C40F;
+  color: white;
 }
 
 .botui-messages-container {
   padding: 30px 0px;
 }
+

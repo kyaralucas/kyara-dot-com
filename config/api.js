@@ -1,14 +1,16 @@
+
+var key = require('./key.json');
 var apiai = require('apiai');
 
 // read the api.ai docs : https://api.ai/docs/
 
 //Enter your API Key
-var app = apiai('2007fee6c3d14ef889535eb0fc8b181b');
+var app = apiai(key);
 
 // Function which returns speech from api.ai
 var getRes = function(query) {
   var request = app.textRequest(query, {
-      sessionId: '<unique session id>'
+      sessionId: '12345678'
   });
 const responseFromAPI = new Promise(
         function (resolve, reject) {
