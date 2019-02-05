@@ -27,19 +27,6 @@ botui.message.add({
   setTimeout(initiate, 6000);
 
 }).then(function () {
-
-  setTimeout(function () {socket.emit('fromClient', { client : 'What do you do?' })}, 9000); // sends the message typed to server
-  setTimeout(function () {console.log('What do you do?')}, 9000); // will print whatever was typed in the field.
-
-}).then(function() {
-
-  // socket.on('fromServer', function (data) { // recieveing a reply from server.
-  // console.log(data.server);
-  // newMessage(data.server);
-  // // window.scrollTo(0, document.querySelector(".scroll").scrollHeight);
-  // addAction();
-
-}).then(function () {
   botui.action.text({
     delay: 5500,
     action: {

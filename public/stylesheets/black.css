@@ -7,8 +7,8 @@
   font-family: 'Open Sans', Arial, sans-serif;
   position: relative;
   display: inline-block;
-  margin: 10px;
-  min-width: 230px;
+  margin: 0px;
+  min-width: 250px;
   max-width: 315px;
   width: 100%;
   color: #141414;
@@ -33,16 +33,16 @@
 
 .snip1568 figcaption {
   width: 100%;
-  background-color: #333333;
+  background-color: #1E2122;
   color: #fff;
   padding: 25px;
   display: inline-block;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   border-radius: 5px;
   position: relative;
 }
 
-.snip1568 figcaption:after {
+/* .snip1568 figcaption:after {
   content: '';
   position: absolute;
   left: 32px;
@@ -51,8 +51,8 @@
   height: 0;
   border-style: solid;
   border-width: 10px 10px 0 10px;
-  border-color: #333333 transparent transparent transparent;
-}
+  border-color: #1E2122 transparent transparent transparent;
+} */
 
 .snip1568 h3,
 .snip1568 h4,
@@ -128,7 +128,7 @@ header {
 
 
 body {
-  background-color: #40364D;
+  background-color: #1E2122;
   overflow: hidden;
 }
 
@@ -138,38 +138,38 @@ iframe {
 }
 
 .botui-app-container {
-  /* margin-top: 0px; */
-  width: 220px;
+  margin-top: 10px;
+  width: 260px;
   height: 600px;
   overflow-y: scroll;
 }
 
 .botui-container {
-  background-color: #40364D;
+  background-color: #1E2122;
 }
 .botui-message-content {
   font-size: 1rem;
   color: white;
-  background-color: #2F283A;
+  background-color: #555556;
   font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .botui-message-content.human {
   font-size: 1rem;
-  color: #40364D;
-  background-color: white;
+  color: white;
+  background-color: #2885CB;
   font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .botui-actions-text-input {
   color: white;
-  border-bottom: 1px solid #2F283A;
+  border-bottom: 1px solid #555556;
   margin: 0;
 }
 
 .botui-actions-buttons-button {
   line-height: 1 !important;
-  background-color: #5FAFE2;
+  background-color: #2885CB;
   box-shadow: none;
 }
 

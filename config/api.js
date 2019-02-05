@@ -1,11 +1,11 @@
 
-var key = require('./key.json');
+var key = '06c2226d2da04562922550de4a2518d6';
 var apiai = require('apiai');
 
 // read the api.ai docs : https://api.ai/docs/
 
 //Enter your API Key
-var app = apiai(key);
+var app = apiai('06c2226d2da04562922550de4a2518d6');
 
 // Function which returns speech from api.ai
 var getRes = function(query) {
@@ -16,6 +16,7 @@ const responseFromAPI = new Promise(
         function (resolve, reject) {
 request.on('error', function(error) {
     reject(error);
+    // console.log(error);
 });
 request.on('response', function(response) {
   resolve(response.result.fulfillment.speech);
