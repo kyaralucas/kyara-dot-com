@@ -35,7 +35,7 @@
   width: 100%;
   background-color: #1E2122;
   color: #fff;
-  padding: 25px;
+  padding: 25px 0px 0px 0px;
   display: inline-block;
   /* margin-bottom: 15px; */
   border-radius: 5px;
@@ -137,15 +137,25 @@ iframe {
   width: 100%;
 }
 
+/* Parent */
 .botui-app-container {
   margin-top: 10px;
   width: 260px;
   height: 600px;
   overflow-y: scroll;
+  overflow: hidden;
 }
 
+/* Child */
 .botui-container {
   background-color: #1E2122;
+  /* overflow: auto; */
+  overflow-y: scroll;
+  /* overflow: hidden; */
+}
+
+.botui-container::-webkit-scrollbar {
+  display: none;
 }
 .botui-message-content {
   font-size: 1rem;
