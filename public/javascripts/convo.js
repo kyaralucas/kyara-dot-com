@@ -1,7 +1,6 @@
 
 var botui = new BotUI('api-bot');
 
-var socket = io.connect('http://localhost:8010');
 // read the BotUI docs : https://docs.botui.org/
 
 botui.message.add({
@@ -11,7 +10,7 @@ botui.message.add({
   content: "I'm Kyara Lucas",
   delay: 2000,
 })).then(botui.message.add({
-  content: 'a data scientist from Curaçao, currently based in Amsterdam',
+  content: 'a data scientist from Curaçao, currently based in Rotterdam',
   delay: 3500,
 })).then(botui.message.add({
   content: "What's up?",
@@ -20,7 +19,7 @@ botui.message.add({
   botui.action.text({
     delay: 5500,
     action: {
-      placeholder: 'Ask me a question...',}
+      placeholder: '...',}
   })
 }).then(function () {
 
